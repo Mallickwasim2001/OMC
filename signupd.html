@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tailwind CSS Create Login Form with Image on Left Side Example</title>
+	<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="flex items-center min-h-screen bg-green-100">
+		<div class="flex-1 h-full max-w-4xl mx-auto bg-green-200 rounded-xl shadow-xl">
+			<div class="flex flex-col md:flex-row">
+				<div class="h-32 md:h-auto md:w-1/2">
+					<img class="object-cover w-full h-full rounded-xl" src="/img/415.jpg" alt="img" />
+				</div>
+				<div class="flex items-center justify-center p-6 sm:p-12 md:w-1/2">
+					<div class="w-full">
+						<div class="flex justify-center">
+							<!-- header -->
+							<header>
+								<img class="w-20 mx-auto mb-5" src="/img/vaccine.png" />
+							</header>
+						</div>
+						<!-- form -->
+						<h1 class="mb-4 text-2xl font-bold text-center text-gray-700">
+							Doctor Registration
+							  
+						</h1>
+						<div class="mb-4 md:mr-2 md:mb-0">
+							<label class="block mb-2 text-sm font-bold text-gray-700" for="firstName">
+								First Name
+							</label>
+							<input
+								class="w-full px-3 py-2 text-sm leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
+								id="firstName" type="text" placeholder="First Name" />
+						</div>
+						<div class="mb-4 md:mr-2 md:mb-0">
+							<label class="block mb-2 text-sm font-bold text-gray-700" for="lastName">
+								Last Name
+							</label>
+							<input
+								class="w-full px-3 py-2 text-sm leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
+								id="firstName" type="text" placeholder="Last Name" />
+						</div>
+						
+						<div>
+							<label class="block mb-2 text-sm font-bold text-gray-700" for="EmailId">
+								Email Id
+							</label>
+							<input type="email"
+								class="w-full px-4 py-2 text-sm border rounded-md focus:border-blue-400 focus:outline-none focus:ring-1 focus:ring-blue-600"
+								placeholder="Email Id" />
+						</div>
+						<div>
+							<label class="block mb-2 text-sm font-bold text-gray-700" for="Password">
+								Password
+							</label>
+							<input
+								class="w-full px-4 py-2 text-sm border rounded-md focus:border-blue-400 focus:outline-none focus:ring-1 focus:ring-blue-600"
+								placeholder="Password" type="password" />
+						</div>
+						<div>
+							<label class="block mb-2 text-sm font-bold text-gray-700" for="Password">
+								Confirm Password
+							</label>
+							<input
+								class="w-full px-4 py-2 text-sm border rounded-md focus:border-blue-400 focus:outline-none focus:ring-1 focus:ring-blue-600"
+								placeholder="Confirm Password" type="password" />
+						</div>
+						<div class="mb-4 md:mr-2 md:mb-0">
+							<label class="block mb-2 text-sm font-bold text-gray-700" for="Specalization">
+								Specalization
+							</label>
+							<input
+								class="w-full px-3 py-2 text-sm leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
+								id="Specalization" type="text" placeholder="Specalization" />
+						</div>
+						<div class="flex justify-center">
+  <div class="mb-2 w-96">
+    <label class="block mb-2 text-sm font-bold text-gray-700">Upload your medical ID</label>
+    <input class="form-control
+    block
+    w-full
+    px-3
+    py-1.5
+    text-base
+    font-normal
+    text-gray-700
+    bg-white bg-clip-padding
+    border border-solid border-gray-300
+    rounded
+    transition
+    ease-in-out
+    m-0
+    focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" type="file" id="formFile">
+  </div>
+</div>
+
+
+
+						<button
+							class="block w-full px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-blue-600 border border-transparent rounded-xl active:bg-blue-600 hover:bg-blue-700 focus:outline-none focus:shadow-outline-blue"
+							href="#">
+							Register
+						</button>
+
+
+						<!-- footer -->
+						<footer>
+							<a class="text-indigo-700 hover:text-pink-700 text-sm float-right" href="/loginP/loginp.html">Already have an
+								account ? Login</a>
+						</footer>
+
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
