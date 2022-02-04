@@ -1,0 +1,250 @@
+html{
+    background: rgb(0, 12, 4);
+    margin-top: 100px;
+     
+}
+.container{
+    background: #011114;
+}
+.header{
+    text-align: center;
+    font-size: 60px;
+    color: #17bebb;
+    margin-bottom: 2 rem;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+::selection{
+    background-color: #3be4d4;
+    color: #3151BF;
+}
+p::selection{
+    background-color: #3be4d4;
+    color: #191222;
+}
+.about .content img{
+    width: 30%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about{
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text{
+    width: 550px;
+    max-width: 100%;
+    padding: 0 10px;
+    
+}
+.text1{
+    width: 550px;
+    max-width: 100%;
+    /*padding-left: 300px;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1280px;
+    max-width: 95%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+
+}
+
+.text h1{
+    color:  #3be4d4;
+    font-size: 75px;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+}
+.text h2{
+    color:  #3be4d4;
+    font-size: 40px;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+}
+
+.text h5{
+    color: #3151BF;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+.text p{
+    color: #191222;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.5px;
+    margin-bottom: 35px;
+}
+
+button{
+    background-color: #3be4d4;
+    color: black;
+    border: 2px solid transparent;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-size: 17px;
+    font-weight: bold;
+   
+}
+a{
+    text-decoration: none;
+}
+
+button:hover{
+    transform: scale(1.2);
+    background-color: transparent;
+    border: 2px solid #3be4d4;
+    color: #3be4d4;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.line{
+    color: #191222;
+    opacity: 20%;
+    margin: 0;
+}
+
+.about .image-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    
+}
+.image-gallery img{
+    max-width: 300px;
+    
+    margin: 10px;
+    
+}
+.content-col{
+    width: 40%;
+}
+
+.image-col{
+    width: 60%;
+}
+
+.copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #e2e2e2;
+    color: #1b1b1b;
+    padding: 15px;
+    font-size: 0.9rem;
+    
+}
+
+@media screen and (max-width: 1180px) {
+    .about{
+        width: 100%;
+        height: auto;
+        padding: 70px 0px;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .about .content img{
+        margin-bottom: 35px;
+    }
+    .text h1{
+        font-size: 55px;
+        margin-bottom: 25px;
+    }
+}
+ .img-column{
+     display: flex;
+     flex-wrap: wrap;
+
+ }
+.our-team{
+    padding: 20px 15px 30px;
+    background: #fff;
+    border-radius: 15px;
+    text-align: center;
+}
+.our-team .pic{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    padding: 10px;
+    margin-bottom: 25px;
+    transition: all 0.5s ease 0s;
+}
+.our-team:hover .pic{
+    background: #17bebb;
+    border-radius: 50%;
+}
+.pic img{
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+.our-team .title{
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    color: #2e282a;
+    text-transform: uppercase;
+    margin: 0 0 7px 0;
+}
+.our-team .post{
+    display: block;
+    font-size: 15px;
+    color: #17bebb;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+.our-team .social{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.our-team .social li{
+    display: inline-block;
+    margin-right: 5px;
+}
+.our-team .social li a{
+    display: block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    font-size: 15px;
+    color: #17bebb;
+    border: 1px solid #17bebb;
+    transition: all 0.5s ease 0s;
+}
+.our-team:hover .social li a{
+    background: #17bebb;
+    color: #fff;
+}
+@media only screen and (max-width: 990px){
+    .our-team{ margin-bottom: 30px; }
+}
