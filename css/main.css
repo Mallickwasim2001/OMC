@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/*
+.wrapper{
+    display: inline-flex;
+
+}
+
+.wrapper .static-txt{
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.wrapper .dynamic-txt{
+    margin-left: 15px;
+    line-height: 90px;
+    height: 90px;
+    overflow: hidden; 
+}
+
+.dynamic-txt li{
+    list-style: none;
+    font-size: 30px;
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    animation: slide 6s steps(4) infinite;
+}
+
+@keyframes slide {
+    100%{
+        top: -360px;
+    }
+}
+
+.dynamic-txt li span{
+    position: relative;
+}
+.dynamic-txt li span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background:  #5CDB95;
+    border-left: 2px solid #05386B;
+    animation: typing 1.5s steps(10) infinite;
+}
+
+@keyframes typing {
+    100%{
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+}*/
+
+
