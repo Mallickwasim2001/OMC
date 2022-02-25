@@ -68,6 +68,45 @@ def login_validation():
     else:
         return render_template('loginp.html')
 
+@app.route("/forgotpasswd")
+def forgotpasswd():
+    return render_template('forgotpassP.html')
+
+@app.route("/email_validation" , methods=['POST'])
+def email_valid():
+    if request.method == "POST":
+        email = request.form.get('email')
+        cursor = mysql.connect().cursor()
+        cursor.execute(" select email from users where 1 ".format(email))
+        users = cursor.fetchall()
+        print(users)
+        if not users :
+            cursor.close()
+            return render_template('signupP.html')
+        else:
+            #return "Logged in successfully"
+            return render_template('passwd_reset.html')
+    
+
+@app.route("/passwd_reset" , methods=['POST', 'GET'])
+def passwd_reset():
+    if request.method == "POST":
+        
+        password = request.form['password']
+        confirmpassword = request.form['cpassword']
+        """cursor = conn.cursor()"""
+        cursor = mysql.connect().cursor()
+        cursor.execute(" UPDATE `users` SET `password`='4321',`cpassword`='4321' WHERE 1")
+        
+        mysql.connect().commit()
+        #mysql.connect().commit()
+        cursor.connection.commit()
+        cursor.close()
+        #mysql.connect().cursor()
+        return render_template('loginp.html')
+    else:
+        return render_template('signupP.html')
+
 
 # add patient user
 app.route('/add_user', methods=['POST', 'GET'])
